@@ -1,0 +1,27 @@
+import unittest
+from check_even import check_even
+
+
+class TestCheckEven(unittest.TestCase):
+
+    def test_even(self):
+        self.assertTrue(check_even(4))
+
+    def test_odd(self):
+        self.assertFalse(check_even(3))
+
+    def test_min_odd(self):
+        self.assertFalse(check_even(1))
+
+    def test_min_even(self):
+        self.assertTrue(check_even(2))
+
+    def test_null(self):
+        self.assertEqual(check_even(0), 'This is null!')
+
+    def test_float(self):
+        self.assertEqual(check_even(8.5), "Number isn't integer!")
+
+
+if __name__ == '__main__':
+    unittest.main()
