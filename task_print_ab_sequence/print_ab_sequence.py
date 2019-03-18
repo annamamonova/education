@@ -3,8 +3,13 @@ when each second number has letter 'a'
 and each third number has letter 'b'."""
 
 
-def print_ab_sequence(number_min=1, number_max=100):
-    """Function for print ab sequence.
+def print_ab_sequence():
+    """Function for print ab sequence."""
+    print(generate_ab_sequence())
+
+
+def generate_ab_sequence(number_min=1, number_max=100):
+    """Function for generate ab sequence.
 
     :param
     number_min: number for start sequence.
@@ -18,7 +23,6 @@ def print_ab_sequence(number_min=1, number_max=100):
         if number % 3 == 0:
             letters += "b"
         sequence += str(number) + letters + ' '
-    print(print_ab_sequence(number_min, number_max))
     return sequence
 
 
