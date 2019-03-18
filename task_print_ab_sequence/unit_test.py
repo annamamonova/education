@@ -5,7 +5,7 @@ import unittest
 from task_print_ab_sequence.print_ab_sequence import generate_ab_sequence
 
 
-class TestPrintAbSequence(unittest.TestCase):
+class TestGenerateAbSequence(unittest.TestCase):
     """Class for unittests"""
 
     def test_sequence(self):
