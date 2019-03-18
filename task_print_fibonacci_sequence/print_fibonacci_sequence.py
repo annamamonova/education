@@ -7,13 +7,13 @@ def generate_fibonacci_sequence(number=21):
     param:
     number: max number in sequence
     """
-    x, y = 0, 1
+    first_number, second_number = 0, 1
     sequence = ''
-    while y < number:
-        res = x + y
-        sequence += str(res) + ' '
-        x = y
-        y = res
+    while second_number < number:
+        result = first_number + second_number
+        sequence += str(result) + ' '
+        first_number = second_number
+        second_number = result
     return sequence
 
 
