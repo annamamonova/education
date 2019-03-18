@@ -1,10 +1,15 @@
+"""Unittests for check function print ab sequence."""
+
+
 import unittest
 from task_print_ab_sequence.print_ab_sequence import print_ab_sequence
 
 
 class TestPrintAbSequence(unittest.TestCase):
+    """Class for unittests"""
 
     def test_sequence(self):
+        """Unittest for check ab sequence for number 1 to 12."""
         self.assertEqual(print_ab_sequence(1, 12), '1 2a 3b 4a 5 6ab 7 8a 9b 10a 11 12ab ')
 
 

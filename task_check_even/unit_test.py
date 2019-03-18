@@ -1,17 +1,19 @@
-# unittests for check even
+"""Unittests for check even."""
+
+
 import unittest
 from task_check_even.check_even import is_even
 
 
-# unittests for check even
 class TestCheckEven(unittest.TestCase):
+    """Unittests for check even."""
 
-    # test for check even
     def test_even(self):
+        """Test for check even."""
         self.assertTrue(is_even(4))
 
-    # test for check odd
     def test_odd(self):
+        """Test for check odd."""
         self.assertFalse(is_even(3))
 
 
