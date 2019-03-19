@@ -18,6 +18,7 @@
 
 
 class Fibonacci:
+    """Class for Fibonacci sequence"""
 
     def __init__(self, max_count=21):
         self.first_number = 0
@@ -35,8 +36,7 @@ class Fibonacci:
             self.second_number = result
             self.count += 1
             return result
-        else:
-            raise StopIteration
+        raise StopIteration
 
 
 def generate_fibonacci_sequence(max_count):
