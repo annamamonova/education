@@ -30,12 +30,10 @@ class Fibonacci:
         return self
 
     def __next__(self):
-        if self.count <= self.max_count:
-            result = self.first_number + self.second_number
-            self.first_number = self.second_number
-            self.second_number = result
+        if self.count < self.max_count:
+            self.first_number, self.second_number = self.second_number, self.first_number + self.second_number
             self.count += 1
-            return result
+            return self.second_number
         raise StopIteration
 
 
@@ -45,10 +43,7 @@ def generate_fibonacci_sequence(max_count):
     param:
     max_count: max number in sequence
     """
-    sequence = []
-    for element in Fibonacci(max_count):
-        sequence.append(element)
-    return sequence
+    return [element for element in Fibonacci(max_count)]
 
 
 def print_fibonacci_sequence(max_count=21):
