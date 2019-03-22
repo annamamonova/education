@@ -31,7 +31,8 @@ class Fibonacci:
 
     def __next__(self):
         if self.count < self.max_count:
-            self.first_number, self.second_number = self.second_number, self.first_number + self.second_number
+            self.first_number, self.second_number = self.second_number, \
+                                                    self.first_number + self.second_number
             self.count += 1
             return self.second_number
         raise StopIteration
