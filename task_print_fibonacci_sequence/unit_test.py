@@ -2,7 +2,7 @@
 
 
 import unittest
-from task_print_fibonacci_sequence.print_fibonacci_sequence import generate_fibonacci_sequence
+from print_fibonacci_sequence import generate_fibonacci_sequence
 
 
 class TestGenerateFibonacciSequence(unittest.TestCase):

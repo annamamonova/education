@@ -2,7 +2,7 @@
 
 
 import unittest
-from task_check_lucky_number.check_lucky_number import is_lucky_number
+from check_lucky_number import is_lucky_number
 
 
 class TestCheckLucky(unittest.TestCase):

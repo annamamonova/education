@@ -2,7 +2,7 @@
 
 
 import unittest
-from task_print_ab_sequence.print_ab_sequence import generate_ab_sequence
+from print_ab_sequence import generate_ab_sequence
 
 
 class TestGenerateAbSequence(unittest.TestCase):
