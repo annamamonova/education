@@ -6,3 +6,4 @@ install:
 script:
   - flake8 --max-line-length=100 --count --max-complexity=10 .
   - find . -iname "*.py" -exec pylint -r y --max-line-length=100 {} +
+  - for test in $(find . -name unit_test.py -type f); do python -m unittest -v ${test:2}; done
