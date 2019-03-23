@@ -2,7 +2,7 @@
 
 
 import unittest
-from check_even import is_even
+from task_check_even.check_even import is_even
 
 
 class TestCheckEven(unittest.TestCase):
