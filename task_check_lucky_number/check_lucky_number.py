@@ -23,6 +23,10 @@ def is_lucky_number(number):
     """
     conv_number, sum1 = conversion(number, 10), 0
     sum1 = sum(conv_number[:(len(conv_number) // 2)])
+    try:
+        assert (len(conv_number) % 2) == 0
+    except AssertionError:
+        print(number, 'cannot be determined!')
     if sum(conv_number) - sum1 == sum1:
         return True
     return False
