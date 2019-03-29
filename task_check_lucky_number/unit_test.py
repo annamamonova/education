@@ -18,7 +18,8 @@ class TestCheckLucky(unittest.TestCase):
 
     def test_not_lucky_odd(self):
         """Test for check not lucky number with odd number."""
-        self.assertFalse(is_lucky_number(12345))
+        with self.assertRaises(Exception):
+            is_lucky_number(12345)
 
 
 if __name__ == '__main__':
