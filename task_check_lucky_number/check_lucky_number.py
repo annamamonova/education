@@ -24,7 +24,7 @@ def is_lucky_number(number):
     conv_number, sum1 = conversion(number, 10), 0
     sum1 = sum(conv_number[:(len(conv_number) // 2)])
     if len(conv_number) % 2:
-        raise Exception(number, 'cannot be determined!')
+        raise TypeError(number, 'cannot be determined!')
     if sum(conv_number) - sum1 == sum1:
         return True
     return False
