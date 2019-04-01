@@ -39,7 +39,3 @@ def get_property_file(path_file):
     return {'num_line': get_num_line(context),
             'num_word': get_num_word(context),
             'size_file': path.getsize(path_file)}
-
-
-path_file = 'C:\\Users\\SEAnMa\\Documents\\education\\task_property_file.txt'
-print(get_property_file(path_file))
