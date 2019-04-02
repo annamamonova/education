@@ -33,8 +33,6 @@ def get_property_file(path_file):
     except FileNotFoundError:
         print("File doesn't find.")
         raise
-    except Exception:
-        print("Unknown error!")
     return {'num_line': get_num_line(context),
             'num_word': get_num_word(context),
             'size_file': path.getsize(path_file)}
