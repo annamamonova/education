@@ -1,7 +1,6 @@
 """Unittests for get property file."""
 
 
-import os
 import unittest
 from task_property_file.get_property_file import get_property_file
 
