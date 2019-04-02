@@ -28,7 +28,7 @@ def get_property_file(path_file):
     :param path_file: path to file.
     """
     try:
-        with open(path_file) as file:
+        with open(path_file, 'r', 'cp1251') as file:
             context = file.readlines()
     except FileNotFoundError:
         print("File doesn't find.")
