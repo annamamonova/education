@@ -12,8 +12,8 @@ class TestGetPropertyFile(unittest.TestCase):
     def test_correct_file(self):
         """Test for correct file."""
         print(os.getcwd())
-        self.assertEqual(get_property_file('task_property_file/task_property_file.txt'),
-                         {'num_line': 21, 'num_word': 76, 'size_file': 444})
+        self.assertEqual(get_property_file('task_property_file.txt'),
+                         {'num_line': 21, 'num_word': 76, 'size_file': 753})
 
     def test_not_exist(self):
         """Test for file doesn't exist."""
