@@ -21,12 +21,11 @@ class TestGetPropertyFile(unittest.TestCase):
         if platform.system() == 'Windows':
             self.assertEqual(get_property_file(path.join('task_property_file',
                                                          'task_property_file_cp1251.txt')),
-                            {'num_line': 21, 'num_word': 76, 'size_file': 444})
+                             {'num_line': 21, 'num_word': 76, 'size_file': 444})
         elif platform.system() == 'Linux':
             self.assertEqual(get_property_file(path.join('task_property_file',
                                                          'task_property_file_cp1251.txt')),
                              {'num_line': 21, 'num_word': 76, 'size_file': 424})
-
 
     def test_not_exist(self):
         """Test for file doesn't exist."""
