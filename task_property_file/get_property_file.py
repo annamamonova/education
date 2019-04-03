@@ -1,7 +1,8 @@
 """Get property file(number lines, number words, size file.)"""
-import sys
-from chardet.universaldetector import UniversalDetector
 from os import path
+import sys
+
+from chardet.universaldetector import UniversalDetector
 
 
 def get_num_line(context):
@@ -43,9 +44,9 @@ def get_property_file(path_file):
     Function for get property file(number lines, number words, size file.)
     :param path_file: path to file.
     """
-    x = get_encoding(path_file)
+    property_encoding = get_encoding(path_file)
     try:
-        with open(path_file, 'r', encoding=x['encoding']) as file:
+        with open(path_file, 'r', encoding=property_encoding['encoding']) as file:
             context = file.readlines()
     except OSError:
         print("Cannot open given file!")
@@ -53,6 +54,7 @@ def get_property_file(path_file):
     return {'num_line': get_num_line(context),
             'num_word': get_num_word(context),
             'size_file': path.getsize(path_file)}
+
 
 if __name__ == '__main__':
     get_property_file()
