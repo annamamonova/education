@@ -1,4 +1,5 @@
 """Get property file(number lines, number words, size file.)"""
+import codecs
 from os import path
 import sys
 
@@ -46,7 +47,7 @@ def get_property_file(path_file):
     """
     property_encoding = get_encoding(path_file)
     try:
-        with open(path_file, 'r', encoding=property_encoding['encoding']) as file:
+        with codecs.open(path_file, 'r', encoding=property_encoding['encoding']) as file:
             context = file.readlines()
     except OSError:
         print("Cannot open given file!")
