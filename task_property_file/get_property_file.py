@@ -57,4 +57,4 @@ def get_property_file(path_file):
 
 
 if __name__ == '__main__':
-    get_property_file()
+    get_property_file(path_file)
