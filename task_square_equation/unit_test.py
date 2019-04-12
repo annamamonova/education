@@ -1,7 +1,5 @@
 """Unittests for get roots square equation."""
 
-from os import path
-import platform
 
 import unittest
 from task_square_equation.get_roots_square_equation import get_roots_square_equation
